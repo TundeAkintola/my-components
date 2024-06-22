@@ -3,6 +3,7 @@ import { GoChevronDown, GoChevronLeft } from "react-icons/go";
 function Accordion({ items }) {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
+  //HANDLING STALE STATE
   const handleToggle = (nextIndex) => {
     setExpandedIndex((currentExpandedIndex) => {
       if (currentExpandedIndex === nextIndex) {
@@ -25,7 +26,7 @@ function Accordion({ items }) {
     return (
       <div key={item.id}>
         <div
-          className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
+          className="flex justify-between p-3 bg-gray-200 border-b items-center cursor-pointer"
           onClick={() => handleToggle(index)}
         >
           {item.label}
