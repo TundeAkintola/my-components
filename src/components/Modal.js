@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
+
 function Modal({ onClose, children, actionBar }) {
   //To disable scrolling when our modal component is in view
   useEffect(() => {

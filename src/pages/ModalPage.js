@@ -11,6 +11,7 @@ function ModalPage() {
   const handleClose = () => {
     setShowModal(false);
   };
+
   const actionBar = (
     <div>
       <Button onClick={handleClose} primary>
